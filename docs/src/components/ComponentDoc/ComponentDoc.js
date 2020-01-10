@@ -64,7 +64,7 @@ class ComponentDoc extends Component {
 
     return (
       /* TODO: use `title` from context */
-      <DocsLayout additionalTitle={displayName} sidebar title='Semantic UI React'>
+      <DocsLayout additionalTitle={displayName} sidebar title='Fomantic UI React'>
         <Grid padded>
           <Grid.Row>
             <Grid.Column>

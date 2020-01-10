@@ -136,7 +136,7 @@ const Introduction = ({ pkg, title }) => (
       <Segment basic textAlign='center'>
         <Logo centered size='small' />
         <Header as='h1' textAlign='center'>
-          Semantic UI React
+          Fomantic UI React
           <Header.Subheader>{pkg.description}</Header.Subheader>
         </Header>
       </Segment>
@@ -146,8 +146,8 @@ const Introduction = ({ pkg, title }) => (
           Introduction
         </Header>
         <p>
-          Semantic UI React is the official React integration for{' '}
-          <a href={semanticUIDocsURL}>Semantic UI</a> .
+          Fomantic UI React is the unofficial React integration for{' '}
+          <a href={semanticUIDocsURL}>Fomantic UI</a> .
         </p>
         <List>
           <List.Item icon='check' content='jQuery Free' />

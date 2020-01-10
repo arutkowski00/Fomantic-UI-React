@@ -1,12 +1,12 @@
 {
-  "name": "semantic-ui-react",
+  "name": "fomantic-ui-react",
   "version": "0.88.2",
-  "description": "The official Semantic-UI-React integration.",
+  "description": "The unofficial Fomantic-UI-React integration.",
   "jsnext:main": "dist/es/index.js",
   "main": "dist/commonjs/index.js",
   "module": "dist/es/index.js",
   "types": "index.d.ts",
-  "unpkg": "dist/umd/semantic-ui-react.min.js",
+  "unpkg": "dist/umd/fomantic-ui-react.min.js",
   "files": [
     "src",
     "dist",
@@ -15,7 +15,7 @@
   "sideEffects": false,
   "scripts": {
     "build": "cross-env NODE_ENV=production gulp build",
-    "build:changelog": "github_changelog_generator --user Semantic-Org --project Semantic-UI-React --no-issues --no-unreleased --release-branch master --since-tag $(git describe --abbrev=0 --tags $(git rev-parse HEAD~250))",
+    "build:changelog": "github_changelog_generator --user arutkowski00 --project Fomantic-UI-React --no-issues --no-unreleased --release-branch master --since-tag $(git describe --abbrev=0 --tags $(git rev-parse HEAD~250))",
     "build:docs": "cross-env NODE_ENV=production gulp build:docs",
     "build:docs:staging": "cross-env STAGING=true yarn build:docs && yarn serve docs/dist",
     "build:dist": "gulp --series build:dist",
@@ -68,14 +68,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://github.com/Semantic-Org/Semantic-UI-React.git"
+    "url": "git+ssh://github.com/arutkowski00/Fomantic-UI-React.git"
   },
-  "author": "Levi Thomason <me@levithomason.com>",
+  "author": "Adam Rutkowski <a_rutkowski@outlook.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Semantic-Org/Semantic-UI-React/issues"
+    "url": "https://github.com/arutkowski00/Fomantic-UI-React/issues"
   },
-  "homepage": "https://github.com/Semantic-Org/Semantic-UI-React#readme",
+  "homepage": "https://github.com/arutkowski00/Fomantic-UI-React#readme",
   "dependencies": {
     "@babel/runtime": "^7.1.2",
     "@semantic-ui-react/event-stack": "^3.1.0",
@@ -167,7 +167,7 @@
     "react-visibility-sensor": "^5.0.2",
     "rimraf": "^2.6.3",
     "satisfied": "^1.1.2",
-    "semantic-ui-css": "^2.4.1",
+    "fomantic-ui-css": "^2.8.3",
     "simulant": "^0.2.2",
     "sinon": "^7.2.7",
     "sinon-chai": "^3.3.0",

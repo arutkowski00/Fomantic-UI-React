@@ -12,11 +12,11 @@ const html = `
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.5/umd/react.production.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.5/umd/react-dom.production.min.js"></script>
   <script src="/umd.js"></script>
-  
+
   <div id="root"></div>
   <script>
     ReactDOM.render(
-      React.createElement(semanticUIReact.Button, null, "Foo"),
+      React.createElement(fomanticUIReact.Button, null, "Foo"),
       document.getElementById("root"),
     )
   </script>
@@ -28,7 +28,7 @@ const assertInnerHtml = async () => {
   const server = http
     .createServer((req, response) => {
       if (req.url === '/umd.js') {
-        fs.readFile(config.paths.dist('umd', 'semantic-ui-react.min.js'), (err, data) => {
+        fs.readFile(config.paths.dist('umd', 'fomantic-ui-react.min.js'), (err, data) => {
           response.setHeader('Content-type', 'text/javascript')
           response.end(data)
         })
